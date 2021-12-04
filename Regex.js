@@ -31,3 +31,14 @@ try{
 catch (e){
     console.log(e);
 }
+
+//UC2 : Restricting taking Pincode other than Numbers at Begining.
+
+try{
+    let object2=new RegexCheck("A400088");
+    console.log(object2.toString());
+}
+catch (e){
+    console.log(e);
+}
+
