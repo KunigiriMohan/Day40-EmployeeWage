@@ -31,3 +31,23 @@ try{                                                                        //tr
 catch (e){
     console.log(e);
 }
+
+//UC2 Ensure @ and validating manadatary bridgelabz 
+
+try{                                                                        //try catch block to handle errors when user enter wrong emailID
+    let object=new EmailValidation("abc.xyz@google.co.in");                     //insted of mandatory bridgelabz part putting google to throw error
+    console.log(object.toString());
+}
+catch (e){
+    console.log(e);
+}
+
+try{                                                                        //try catch block to handle errors when user enter wrong emailID
+    let object=new EmailValidation("abc.xyz!bridgelabz.co.in");             //insted of @ symbol inputting ! symbol to throw error 
+    console.log(object.toString());
+}
+catch (e){
+    console.log(e);
+}
+
+ 
