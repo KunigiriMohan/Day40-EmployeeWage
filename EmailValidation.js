@@ -25,8 +25,8 @@ class EmailValidation{
 //UC1 Checking Email Id for abc.xyz@bridgelabz.co.in
 
 try{                                                                        //try catch block to handle errors when user enter wrong emailID
-    let object=new EmailValidation("abc.xyz@bridgelabz.co.in");
-    console.log(object.toString());
+    let object1=new EmailValidation("abc.xyz@bridgelabz.co.in");
+    console.log(object1.toString());
 }
 catch (e){
     console.log(e);
@@ -35,19 +35,36 @@ catch (e){
 //UC2 Ensure @ and validating manadatary bridgelabz 
 
 try{                                                                        //try catch block to handle errors when user enter wrong emailID
-    let object=new EmailValidation("abc.xyz@google.co.in");                     //insted of mandatory bridgelabz part putting google to throw error
-    console.log(object.toString());
+    let object2=new EmailValidation("abc.xyz@google.co.in");                     //insted of mandatory bridgelabz part putting google to throw error
+    console.log(object2.toString());
 }
 catch (e){
     console.log(e);
 }
 
 try{                                                                        //try catch block to handle errors when user enter wrong emailID
-    let object=new EmailValidation("abc.xyz!bridgelabz.co.in");             //insted of @ symbol inputting ! symbol to throw error 
-    console.log(object.toString());
+    let object3=new EmailValidation("abc.xyz!bridgelabz.co.in");             //insted of @ symbol inputting ! symbol to throw error 
+    console.log(object3.toString());
 }
 catch (e){
     console.log(e);
 }
 
- 
+//UC3 Ensuring "." after bridgelabz third part i.e co part
+
+try{                                                                        //try catch block to handle errors when user enter wrong emailID
+    let object4=new EmailValidation("abc.xyz@bridgelabz!co.in");                     //insted of mandatory bridgelabz part putting google to throw error
+    console.log(object4.toString());
+}
+catch (e){
+    console.log(e);
+}
+
+try{                                                                        //try catch block to handle errors when user enter wrong emailID
+    let object5=new EmailValidation("abc.xyz!bridgelabz.com.in");             //insted of @ symbol inputting ! symbol to throw error 
+    console.log(object5.toString());
+}
+catch (e){
+    console.log(e);
+}
+
